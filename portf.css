@@ -1,0 +1,132 @@
+
+/* ---------- mise en page générale ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- en-tête ---------- */
+header {
+    background: #005f99;
+    color: #fff;
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: .5rem 0 1rem;
+    font-style: italic;
+}
+
+/* ---------- navigation ---------- */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 .5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: .5rem .75rem;
+    transition: background .2s, color .2s;
+}
+
+nav a:hover,
+nav a:focus {
+    background: rgba(255, 255, 255, .2);
+    border-radius: 4px;
+}
+
+/* ---------- contenu principal ---------- */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    border-bottom: 2px solid #005f99;
+    padding-bottom: .4rem;
+    margin-bottom: 1rem;
+    color: #005f99;
+}
+
+/* compétences sous forme de “badges” */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+#skills li {
+    list-style: none;
+    background: #e0f0ff;
+    color: #005f99;
+    margin: .25rem;
+    padding: .4rem .8rem;
+    border-radius: 4px;
+    font-size: .95rem;
+}
+
+/* projets présentés en cartes */
+#projets article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+#projets h3 {
+    margin-top: 0;
+}
+
+/* footer simple */
+footer {
+    background: #eee;
+    color: #555;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+
+/* ---------- responsive ------------ */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: .25rem 0;
+    }
+}
+

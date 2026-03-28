@@ -1,0 +1,52 @@
+/* ===== SECTION A PROPOS ===== */
+#about {
+  background: #0f172a;
+  padding: 80px 10%;
+  color: white;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #38bdf8;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-container img {
+  width: 180px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+}
+
+.about-container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.retour {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0984e3;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.retour:hover {
+  background-color: #0652DD;
+  transform: scale(1.05);
+}
+
+.centre {
+  text-align: center;
+}
